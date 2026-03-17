@@ -1,115 +1,69 @@
-# Cracking Higher Ed: Why Startups Miss the Mark
+# JTBD README Expansion Implementation Plan
 
-**A diagnostic framework for EdTech founders selling into higher education.**
+> **For agentic workers:** REQUIRED: Use superpowers:subagent-driven-development (if subagents available) or superpowers:executing-plans to implement this plan. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-Presented at [SXSW EDU 2026](https://www.sxswedu.com/) by [Philippos Savvides](mailto:philippos.savvides@asuep.org), Head of [ScaleU](https://scaleu.org) at ASU Enterprise Partners.
+**Goal:** Add a "Part 2: The jobs behind the journey" section to the README with 15 JTBD job statements, 4 structural patterns, and validation depth probes for the existing diagnostic.
+
+**Architecture:** Single file edit to `README.md`. Part 2 is inserted between the existing "5-question diagnostic" section (line 107) and "About ScaleU" (line 108). Content is drawn from the design spec at `docs/superpowers/specs/2026-03-17-jtbd-readme-expansion-design.md`. No code, no tests — this is a content expansion verified by reading the output.
+
+**Tech Stack:** Markdown
+
+**Spec:** `docs/superpowers/specs/2026-03-17-jtbd-readme-expansion-design.md`
 
 ---
 
-## The problem
+## File Map
 
-EdTech startups fail in higher ed not because their products are bad, but because they validate with the wrong people, measure the wrong outcomes, and mistake enthusiasm for demand.
+- **Modify:** `README.md:107` — insert Part 2 content between line 107 (end of diagnostic) and line 108 (About ScaleU)
 
-The average higher ed sales cycle is 12-18 months. EdTech VC funding hit $2.4B in 2024, the lowest since 2014. Most startups don't survive long enough to close a single institutional sale. The margin for error is zero.
+No other files created or modified.
 
-This repo contains the framework from the SXSW EDU talk, designed to help founders distinguish real institutional demand from false positives before they run out of runway.
+---
 
-## What's in this repo
+### Task 1: Insert Part 2 header and intro paragraph
 
-```
-/deck              Slide deck (.pptx and .pdf)
-/diagnostic        The 5-question diagnostic as a standalone tool
-README.md          The full framework (you're reading it)
-LICENSE            CC BY 4.0
-```
+**Files:**
+- Modify: `README.md:107` — add content after line 107
 
-## The framework
+- [ ] **Step 1: Add the Part 2 header and intro**
 
-### 1. Map your product to the student journey
+Insert the following after the line ending with `the pilot succeeds and procurement fails.` (diagnostic question 5) and before `## About ScaleU`:
 
-Every EdTech product maps to a stage in the learner lifecycle. Your stage determines your buyer, your evidence requirements, and your competitive density.
-
-| Phase | What happens | Status |
-|-------|-------------|--------|
-| **Pre-enroll** | Readiness evaluation, transfer credit research, financial aid exploration | Underserved |
-| **Apply** | Application submission, transcript processing, admissions decisions | Underserved |
-| **Onboard** | Credit articulation, advising, system familiarization | Underserved |
-| **Select & enroll** | Course selection, academic scheduling, degree planning | Underserved |
-| **Course experience** | Active learning, assessment, instructor interaction, support | Saturated (15+ product categories) |
-| **Graduate & beyond** | Career transition, alumni engagement, credentialing | Partial coverage |
-
-80% of EdTech founders build for Course Experience. The biggest opportunities are in the first four phases, where pain is quantified at scale but product coverage is thin.
-
-### 2. Define the job for the person, not the institution
-
-The market is not "universities." The market is a specific person with a specific job at a specific journey stage. Use the Jobs to Be Done framework:
-
-| The person | The job | What they hire |
-|-----------|---------|---------------|
-| Prospective student (Pre-enroll) | Understand if my credits transfer before I commit | Transfer credit evaluation tool |
-| Academic advisor (Select & enroll) | Guide 300 students to the right courses each term | Degree planning intelligence |
-| Faculty member (Course experience) | Give meaningful feedback to 200 students per section | AI grading with learning diagnostics |
-| Career services director (Graduate & beyond) | Connect graduates to employers at scale | Talent pipeline platform |
-
-**The test:** if you cannot name the person, the job, and the journey phase, you do not have a market. You have a hypothesis.
-
-### 3. Identify the buyer, not just the user
-
-The same product serves different jobs for different stakeholders. A retention analytics tool:
-
-| Stakeholder | Their job | What they need from a pilot |
-|------------|-----------|---------------------------|
-| **Academic advisor** | Faster triage of at-risk students | Operational dashboard proving time savings |
-| **VP of Student Affairs** | Reduce DFW rates to justify budget | Outcome data showing measurable improvement |
-| **Provost** | Strategic plan metrics for the board | Year-over-year retention numbers |
-
-The advisor is the most accessible. The advisor also doesn't control the budget. If you validate with the user but not the buyer, you get enthusiasm without procurement.
-
-### 4. Separate noise from signal
-
-| Noise (false positive) | Signal (real demand) |
-|----------------------|---------------------|
-| "Faculty love it" | Budget holder named a specific line item |
-| "10,000 student signups" | Pilot measured outcomes the buyer needs |
-| "The dean said transformative" | Procurement started before pilot ended |
-| "3 pilot champions" | Product survives if any champion leaves |
-
-**The pattern:** noise comes from users and champions. Signal comes from buyers and processes.
-
-### 5. Build the moat that AI can't replicate
-
-Pure software without structural defensibility faces substitution risk within 18 months. Locate your product on the spectrum:
-
-| Exposure | Description | Timeline |
-|----------|------------|----------|
-| **High** | Content generation, summarization, Q&A, template output | Replicable in 12-18 months |
-| **Moderate** | AI embedded in workflow or dataset with switching costs | Replicable in 2-4 years |
-| **Low** | Structural moat that AI substitution cannot dissolve | Defensible for 3+ years |
-
-Four moats that move you toward defensibility:
-
-- **Proprietary data network:** Longitudinal data that improves with usage and cannot be reconstructed by a new entrant
-- **Deep integration:** LTI/SIS write-back creating operational switching costs that exceed the product's price
-- **Supply-side network effects:** More providers, mentors, or contributors increase quality for all existing users
-- **Regulated access:** FERPA, HIPAA, or credentialing compliance that LLM wrappers cannot clear
-
-**The reframe:** lead with the institutional dependency you create, not the technology you use.
-
-## The 5-question diagnostic
-
-Use before, during, or after any pilot. Full standalone version in [`/diagnostic`](./diagnostic/).
-
-1. **Who is struggling, and what is the struggling moment?** If you can't name a specific person with a specific problem, you have a hypothesis, not a job.
-2. **What have they already tried (and why did it fail)?** Your competition isn't other EdTech. It's spreadsheets, grad students, and ignoring the problem.
-3. **Is there a budget line item?** "Interesting" vs. "funded" is the only filter that matters.
-4. **What happens if they do nothing?** "We lose accreditation" is a job. "Students might learn better" is a hypothesis.
-5. **Who else must say yes?** If the answer is "just me," the pilot succeeds and procurement fails.
+```markdown
 
 ---
 
 ## Part 2: The jobs behind the journey
 
 The framework above is the quick filter. Part 2 goes deeper: a catalog of validated jobs across the student journey, structural patterns that most founders miss, and pressure-test probes for each diagnostic question. If you're past the "is this a real opportunity?" stage and into "how do I build the right evidence?", keep reading.
+```
+
+- [ ] **Step 2: Verify insertion**
+
+Read `README.md` and confirm:
+- The `---` separator appears after the diagnostic section
+- The Part 2 header and intro paragraph appear before `## About ScaleU`
+- Part 1 content is unchanged
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add README.md
+git commit -m "docs: add Part 2 header and intro to README"
+```
+
+---
+
+### Task 2: Add Section 6 — Jobs Atlas (Pre-enroll, Apply, Onboard)
+
+**Files:**
+- Modify: `README.md` — append after the Part 2 intro paragraph
+
+- [ ] **Step 1: Add Section 6 header and Pre-enroll jobs**
+
+Append after the Part 2 intro paragraph:
+
+```markdown
 
 ### 6. Jobs atlas: what people actually need at each phase
 
@@ -137,6 +91,13 @@ Every phase in the student journey contains specific jobs that real people need 
    - What they've hired: Nothing — the information gap is invisible until they experience it
    - Why it fails: Marketing describes format in calendar terms ("7.5 weeks"), not workload terms ("15+ hours per week alongside your job")
    - The job: "Help me understand what this pace will actually feel like in my life"
+```
+
+- [ ] **Step 2: Add Apply and Onboard jobs**
+
+Append immediately after the Pre-enroll jobs:
+
+```markdown
 
 **Apply**
 
@@ -176,6 +137,31 @@ Every phase in the student journey contains specific jobs that real people need 
    - What they've hired: Orientation modules (inconsistently available), time management advice from general web searches
    - Why it fails: Generic orientation does not simulate the actual experience; readiness interventions exist but are inconsistently deployed across programs
    - The job: "Help me be ready for what's coming before week 1 hits"
+```
+
+- [ ] **Step 3: Verify**
+
+Read `README.md` and confirm jobs 1-8 appear under Section 6 with correct formatting. Verify Part 1 is unchanged.
+
+- [ ] **Step 4: Commit**
+
+```bash
+git add README.md
+git commit -m "docs: add Jobs Atlas — Pre-enroll, Apply, Onboard (jobs 1-8)"
+```
+
+---
+
+### Task 3: Add Section 6 — Jobs Atlas (Select & Enroll, Course Experience, Graduate & beyond)
+
+**Files:**
+- Modify: `README.md` — append after Onboard jobs
+
+- [ ] **Step 1: Add Select & Enroll jobs**
+
+Append after job 8:
+
+```markdown
 
 **Select & enroll**
 
@@ -206,6 +192,13 @@ Every phase in the student journey contains specific jobs that real people need 
     - What they've hired: Manual tracking, advisor meetings, spreadsheets
     - Why it fails: The tools designed to answer "what do I still need?" do not answer it clearly
     - The job: "Help me see a clear, plain-language picture of what's left between me and graduation"
+```
+
+- [ ] **Step 2: Add Course Experience and Graduate & beyond jobs**
+
+Append after job 12:
+
+```markdown
 
 **Course experience**
 
@@ -235,6 +228,33 @@ This phase is saturated with products. The two jobs below are structural — the
     - Why it fails: Career services at scale lack the capacity or employer relationships to serve online graduates with the same intensity as residential students
     - The job: "Help me turn this degree into the career outcome I enrolled for"
     - Founder note: This phase is the least researched and least served in the entire learner lifecycle. Most institutions have minimal data on post-graduation outcomes. The gap between "graduated" and "got the job or promotion they came for" is wide open.
+```
+
+- [ ] **Step 3: Verify**
+
+Read `README.md` and confirm all 15 jobs appear under Section 6. Verify phase names match Part 1 exactly: Pre-enroll, Apply, Onboard, Select & enroll, Course experience, Graduate & beyond.
+
+- [ ] **Step 4: Commit**
+
+```bash
+git add README.md
+git commit -m "docs: add Jobs Atlas — Select & Enroll, Course Experience, Graduate & beyond (jobs 9-15)"
+```
+
+---
+
+### Task 4: Add Section 7 — Patterns Founders Miss
+
+**Files:**
+- Modify: `README.md` — append after Section 6
+
+- [ ] **Step 1: Add Section 7 with all 4 patterns**
+
+Note: The spec uses "Research" for two rows in the Pattern 2 table. This plan uses "Pre-enroll" instead, matching Part 1's phase names as required by the spec's own constraint (spec line 68).
+
+Append after job 15:
+
+```markdown
 
 ### 7. Patterns founders miss
 
@@ -281,6 +301,31 @@ Students describe one experience: "I'm teaching myself," "feedback is generic," 
 These are tracked by institutions as separate problems in separate reports. They are the same structural constraint described from two positions. Growing enrollment increases class sizes, which reduces time per student, which degrades feedback quality, which causes students to disengage.
 
 *Founder takeaway:* When you hear a student experience problem, find out whether the provider is reporting the same problem from the other side. If so, the tool that solves the provider's capacity job often solves the student's experience job as a byproduct — and the provider side is where the budget and procurement authority sit.
+```
+
+- [ ] **Step 2: Verify**
+
+Read `README.md` and confirm Section 7 appears after Section 6 with all 4 patterns. Check that Pattern 2's table uses Part 1 phase names (Pre-enroll, not Research). Verify Part 1 is unchanged.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add README.md
+git commit -m "docs: add Section 7 — Patterns founders miss"
+```
+
+---
+
+### Task 5: Add Section 8 — Validation Depth
+
+**Files:**
+- Modify: `README.md` — append after Section 7
+
+- [ ] **Step 1: Add Section 8 with all 5 questions**
+
+Append after Pattern 4:
+
+```markdown
 
 ### 8. Validation depth: pressure-testing your diagnostic answers
 
@@ -329,18 +374,51 @@ Watch for: If you have only validated with users and champions, you have enthusi
 ---
 
 The 5-question diagnostic gives you the quick filter. The depth probes give you the evidence quality you need to survive the 12-18 month sales cycle described in Part 1. Before committing to a pilot, make sure you can answer every depth probe — not just the headline question.
+```
 
-## About ScaleU
+- [ ] **Step 2: Verify**
 
-[ScaleU](https://scaleu.org) is ASU's EdTech validation program. We broker paid pilots between early-stage EdTech companies and Arizona State University's institutional infrastructure, generating the evidence founders need to fundraise and sell at enterprise scale.
+Read `README.md` and confirm Section 8 appears after Section 7. Check that:
+- All 5 questions are present with depth probes and "Watch for" callouts
+- Pattern references (→ Pattern 2, Pattern 3, Pattern 4) are correct
+- The `## About ScaleU` section follows immediately after Section 8
+- Part 1 content is unchanged
 
-## Contact
+- [ ] **Step 3: Commit**
 
-Philippos Savvides
-Head, ScaleU | ASU Enterprise Partners
-philippos.savvides@asuep.org
-[scaleu.org](https://scaleu.org) | [LinkedIn](https://linkedin.com/in/savvides) | [X](https://x.com/savvides)
+```bash
+git add README.md
+git commit -m "docs: add Section 8 — Validation depth probes"
+```
 
-## License
+---
 
-This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt this material for any purpose, provided you give appropriate attribution.
+### Task 6: Final review and verification
+
+**Files:**
+- Read: `README.md` (full file)
+
+- [ ] **Step 1: Read the full README**
+
+Read the entire `README.md` and verify:
+1. Part 1 (sections 1-5 + diagnostic) is completely unchanged from the original
+2. Part 2 appears between the diagnostic and About ScaleU
+3. Section 6 contains exactly 15 numbered jobs across 6 phases
+4. Phase names match Part 1: Pre-enroll, Apply, Onboard, Select & enroll, Course experience, Graduate & beyond
+5. Section 7 contains 4 patterns with examples and takeaways
+6. Section 8 contains 5 questions with depth probes and watch-for callouts
+7. Pattern cross-references in Section 8 are correct (Q1→P2, Q3→P4, Q4→P3)
+8. No ASU-specific content, no institution names, no tool names, no student counts
+9. Footer sections (About ScaleU, Contact, License) are unchanged
+10. Markdown formatting renders correctly (headers, lists, tables, emphasis)
+
+- [ ] **Step 2: Fix any issues found**
+
+If any issues are found in Step 1, fix them.
+
+- [ ] **Step 3: Final commit (if fixes were needed)**
+
+```bash
+git add README.md
+git commit -m "docs: fix formatting issues in Part 2"
+```
