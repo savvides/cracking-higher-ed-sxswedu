@@ -12,7 +12,13 @@ EdTech startups fail in higher ed not because their products are bad, but becaus
 
 The average higher ed sales cycle is 12-18 months. EdTech VC funding hit $2.4B in 2024, the lowest since 2014. Most startups don't survive long enough to close a single institutional sale. The margin for error is zero.
 
-This repo contains the framework from the SXSW EDU talk, designed to help founders distinguish real institutional demand from false positives before they run out of runway.
+This framework helps founders, administrators, and investors distinguish real institutional demand from false positives — before startups run out of runway.
+
+## Who this is for
+
+- **EdTech founders** — validate demand before you burn runway on a 12-month sales cycle
+- **University administrators** — evaluate vendor claims using the same framework your peers use internally
+- **Investors and accelerators** — assess whether a portfolio company has real institutional signal or just enthusiasm
 
 ## What's in this repo
 
