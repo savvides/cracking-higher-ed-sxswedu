@@ -350,3 +350,11 @@ philippos.savvides@asuep.org
 ## License
 
 This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt this material for any purpose, provided you give appropriate attribution.
+
+## Use the framework as AI skills
+
+The jobs atlas, founder traps, and 5-question diagnostic from this talk are encoded as interactive AI skills in the **EdTech Founder Stack**:
+
+**[github.com/savvides/edtechfounderstack](https://github.com/savvides/edtechfounderstack)**
+
+10 AI skills. 376 peer-reviewed papers. Run `/idea-validation` in Claude Code and the framework from this talk becomes an interactive diagnostic that adapts to your specific product and market. Free. MIT licensed.
