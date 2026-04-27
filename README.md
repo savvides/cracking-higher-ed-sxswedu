@@ -12,7 +12,7 @@ EdTech startups fail in higher ed not because their products are bad, but becaus
 
 The average higher ed sales cycle is 12-18 months. EdTech VC funding hit $2.4B in 2024, the lowest since 2014. Most startups don't survive long enough to close a single institutional sale. The margin for error is zero.
 
-This framework helps founders, administrators, and investors distinguish real institutional demand from false positives — before startups run out of runway.
+This framework helps founders, administrators, and investors distinguish real institutional demand from false positives, before startups run out of runway.
 
 ## Who this is for
 
@@ -143,7 +143,7 @@ Every phase in the student journey contains specific jobs that real people need 
 3. **Format comprehension gap**
    - The person: Prospective student unfamiliar with accelerated online formats
    - The struggling moment: Does not understand what compressed session formats mean in practice for daily and weekly workload
-   - What they've hired: Nothing — the information gap is invisible until they experience it
+   - What they've hired: Nothing. The information gap is invisible until they experience it.
    - Why it fails: Marketing describes format in calendar terms ("7.5 weeks"), not workload terms ("15+ hours per week alongside your job")
    - The job: "Help me understand what this pace will actually feel like in my life"
 
@@ -175,7 +175,7 @@ Every phase in the student journey contains specific jobs that real people need 
 7. **Post-admission communication void**
    - The person: Newly admitted student
    - The struggling moment: Receives acceptance notification and then no proactive guidance on what to do next
-   - What they've hired: Nothing — students either figure it out or disengage
+   - What they've hired: Nothing. Students either figure it out or disengage.
    - Why it fails: The gap between acceptance and course start is an information dead zone
    - The job: "Help me know what I'm supposed to do between getting accepted and starting my first class"
 
@@ -218,7 +218,7 @@ Every phase in the student journey contains specific jobs that real people need 
 
 **Course experience**
 
-This phase is saturated with products. The two jobs below are structural — they sit on the provider side, not the student side. That's where the underserved opportunity is.
+This phase is saturated with products. The two jobs below are structural: they sit on the provider side, not the student side. That's where the underserved opportunity is.
 
 13. **Instructor capacity constraint → student experience**
     - The person: Faculty member teaching large online sections
@@ -226,7 +226,7 @@ This phase is saturated with products. The two jobs below are structural — the
     - What they've hired: Templates, reduced assignment scope, TA support where available
     - Why it fails: The feedback loop (more students → less time per student → worse feedback → worse outcomes) is structural, not solvable by individual effort
     - The job: "Help me give meaningful feedback to every student without working unsustainable hours"
-    - Founder note: Students report "teaching myself" and "absent instructors." Faculty independently report burnout and unsustainable workload. These are the same problem described from two sides. Tools that solve the faculty capacity job solve the student experience job as a byproduct — and the faculty side is where the budget sits.
+    - Founder note: Students report "teaching myself" and "absent instructors." Faculty independently report burnout and unsustainable workload. These are the same problem described from two sides. Tools that solve the faculty capacity job solve the student experience job as a byproduct, and the faculty side is where the budget sits.
 
 14. **Support access gaps**
     - The person: Student needing academic support (tutoring, writing help, math help)
@@ -253,7 +253,7 @@ Four structural dynamics that are not visible from surface-level discovery inter
 
 Most online programs front-load commitment (apply, enroll, pay) and back-load information (syllabi, credit evaluation, true costs, workload expectations). Students commit based on incomplete information, discover reality does not match expectations, and then either struggle through or withdraw.
 
-Founders who build for the downstream symptom — a retention intervention, a student success dashboard — miss the upstream cause. The student never had the information to make a good decision in the first place.
+Founders who build for the downstream symptom (a retention intervention, a student success dashboard) miss the upstream cause. The student never had the information to make a good decision in the first place.
 
 *Example:* Students enroll without knowing what a 7.5-week accelerated term actually demands. They hit week 1, experience workload shock, and drop. A retention tool flags them as "at risk" in week 2. But the real failure point was months earlier, when no one translated "7.5-week session" into "15+ hours per week on top of your job."
 
@@ -289,7 +289,7 @@ Students describe one experience: "I'm teaching myself," "feedback is generic," 
 
 These are tracked by institutions as separate problems in separate reports. They are the same structural constraint described from two positions. Growing enrollment increases class sizes, which reduces time per student, which degrades feedback quality, which causes students to disengage.
 
-*Founder takeaway:* When you hear a student experience problem, find out whether the provider is reporting the same problem from the other side. If so, the tool that solves the provider's capacity job often solves the student's experience job as a byproduct — and the provider side is where the budget and procurement authority sit.
+*Founder takeaway:* When you hear a student experience problem, find out whether the provider is reporting the same problem from the other side. If so, the tool that solves the provider's capacity job often solves the student's experience job as a byproduct, and the provider side is where the budget and procurement authority sit.
 
 ### 8. Validation depth: pressure-testing your diagnostic answers
 
@@ -309,7 +309,7 @@ Depth probes:
 - Are they using workarounds that technically function but do not scale? Spreadsheets, grad students, and unofficial tool substitutions are signs of a real job with no adequate solution.
 - Have they tried solving the downstream symptom without addressing the upstream cause? If prior solutions targeted the wrong phase, your opportunity is the phase they have not addressed.
 
-Watch for: If "nobody's tried anything," either the job is not painful enough to pay for, or you are talking to the wrong person. Real jobs always have workarounds — even bad ones.
+Watch for: If "nobody's tried anything," either the job is not painful enough to pay for, or you are talking to the wrong person. Real jobs always have workarounds, even bad ones.
 
 **Question 3: Is there a budget line item?**
 
@@ -337,7 +337,7 @@ Watch for: If you have only validated with users and champions, you have enthusi
 
 ---
 
-The 5-question diagnostic gives you the quick filter. The depth probes give you the evidence quality you need to survive the 12-18 month sales cycle described in Part 1. Before committing to a pilot, make sure you can answer every depth probe — not just the headline question.
+The 5-question diagnostic gives you the quick filter. The depth probes give you the evidence quality you need to survive the 12-18 month sales cycle described in Part 1. Before committing to a pilot, make sure you can answer every depth probe, not just the headline question.
 
 ## About ScaleU
 
@@ -356,8 +356,8 @@ This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/
 
 ## Use the framework as AI skills
 
-The jobs atlas, founder traps, and 5-question diagnostic from this talk are encoded as interactive AI skills in the **EdTech Founder Stack**:
+The jobs atlas, founder traps, and 5-question diagnostic are also packaged as AI skills you can run on your own product: the **EdTech Founder Stack**.
 
 **[github.com/savvides/edtechfounderstack](https://github.com/savvides/edtechfounderstack)**
 
-10 AI skills. 376 peer-reviewed papers. Run `/idea-validation` in Claude Code and the framework from this talk becomes an interactive diagnostic that adapts to your specific product and market. Free. MIT licensed.
+10 skills, 376 peer-reviewed papers behind them. Run `/idea-validation` in Claude Code and the framework runs against your product and market, not the generic version. Free, MIT licensed.
