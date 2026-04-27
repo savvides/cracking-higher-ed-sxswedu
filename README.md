@@ -23,9 +23,12 @@ This framework helps founders, administrators, and investors distinguish real in
 ## What's in this repo
 
 ```
-/deck              Slide deck (.pptx and .pdf)
-/diagnostic        The 5-question diagnostic as a standalone tool
 README.md          The full framework (you're reading it)
+/diagnostic        The 5-question diagnostic as a standalone tool
+/deck              SXSW EDU 2026 slide deck (.pptx and .pdf)
+/assets            Social preview image
+CONTRIBUTING.md    How to share case studies or propose new job statements
+CHANGELOG.md       Version history
 LICENSE            CC BY 4.0
 ```
 

@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] - 2026-04-27
+
+### Changed
+- Updated README "What's in this repo" tree to list `/assets`, `CONTRIBUTING.md`, and `CHANGELOG.md`
+
+### Removed
+- Sync-conflict artifacts (`CHANGELOG 2.md`, `.gitignore 2`, stray `.DS_Store` files)
+- Empty `docs/` directory left over from the removed polish-spec
+
 ## [1.1.0] - 2026-03-28
 
 ### Changed
@@ -32,6 +41,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 - README with full framework overview
 - CC BY 4.0 license
 
+[1.1.1]: https://github.com/savvides/cracking-higher-ed-sxswedu/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/savvides/cracking-higher-ed-sxswedu/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/savvides/cracking-higher-ed-sxswedu/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/savvides/cracking-higher-ed-sxswedu/releases/tag/v0.1.0
